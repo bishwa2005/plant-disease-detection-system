@@ -12,3 +12,7 @@ opencv_python_headless
 langchain
 langchain-google-genai
 python-dotenv
+Flask
+Flask-CORS
+requests
+Pillow

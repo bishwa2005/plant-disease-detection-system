@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Disease Detection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🌱 Plant Disease Detection</h1>
+            <p>Upload an image or paste an image URL to get an instant AI-powered diagnosis.</p>
+        </div>
+
+        <div class="main-content">
+            <div class="card">
+                <h2>1. Provide an Image</h2>
+                <div class="upload-section">
+                    <div class="upload-area" id="upload-area">
+                        <div class="upload-icon">📤</div>
+                        <input type="file" id="image-uploader" accept="image/png, image/jpeg, image/jpg">
+                        <label for="image-uploader" class="upload-label">Click to upload or drag & drop</label>
+                    </div>
+                    
+                    <div class="or-divider">or</div>
+                    
+                    <input type="text" id="url-uploader" class="url-input" placeholder="Paste image URL here...">
+                    
+                    <div id="image-preview" class="image-preview"></div>
+                    
+                    <button class="predict-button" id="predict-button">Analyze Image</button>
+                </div>
+            </div>
+
+            <div class="card" id="prevention-card">
+                <h2>⭐ Proactive Plant Care</h2>
+                <p>Preventing disease is easier than treating it. Here are some general tips:</p>
+                <div class="result-item">
+                    <h3>1. Promote Good Airflow</h3>
+                    <p>Prune plants and give them space. Good air circulation helps leaves dry quickly.</p>
+                </div>
+                <div class="result-item">
+                    <h3>2. Water Wisely</h3>
+                    <p>Water at the base of the plant, not on the leaves. Water in the morning.</p>
+                </div>
+                <div class="result-item">
+                    <h3>3. Practice Good Sanitation</h3>
+                    <p>Remove and destroy any dead or diseased leaves. Clean your pruning tools.</p>
+                </div>
+            </div>
+            
+            <div class="card results hidden" id="results">
+                <h2>🔍 Analysis Result</h2>
+                <div class="prediction-output" id="prediction-output"></div>
+                
+                <div class="result-item" id="symptoms-section">
+                    <h3>Symptoms</h3>
+                    <p id="symptoms-output"></p>
+                </div>
+                
+                <div class="result-item" id="treatment-section">
+                    <h3>Suggested Treatment</h3>
+                    <p id="treatment-output"></p>
+                </div>
+
+                <div class="result-item" id="prevention-section">
+                    <h3 id="prevention-title">Prevention</h3>
+                    <p id="prevention-output"></p>
+                </div>
+                </div>
+        </div>
+
+        <div class="card chat-container hidden" id="chat-container">
+            <h2>💬 Ask Our Expert Bot</h2>
+            <div class="chat-box" id="chat-box">
+                </div>
+            <div class="chat-input-container">
+                <input type="text" id="chat-message" placeholder="Ask a follow-up question...">
+                <button class="chat-send-button" id="chat-send-button">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
