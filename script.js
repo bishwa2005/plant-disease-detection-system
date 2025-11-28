@@ -1,5 +1,5 @@
 // The URL of your Flask backend
-const API_URL = "http://127.0.0.1:5000";
+const API_URL = "https://plant-disease-detection-system-eu0n.onrender.com/";
 
 // --- Page Element References ---
 const imageUploader = document.getElementById("image-uploader");
