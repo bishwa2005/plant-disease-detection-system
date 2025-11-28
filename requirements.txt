@@ -16,3 +16,4 @@ Flask
 Flask-CORS
 requests
 Pillow
+gunicorn
