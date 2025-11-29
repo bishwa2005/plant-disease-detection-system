@@ -10,7 +10,8 @@ from dotenv import load_dotenv
 import requests
 
 from langchain_google_genai import ChatGoogleGenerativeAI
-from langchain.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate
+
 from langchain.chains import ConversationChain
 from langchain.memory import ConversationBufferMemory
 

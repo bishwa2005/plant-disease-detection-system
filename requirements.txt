@@ -8,7 +8,7 @@ scikit_learn
 tensorflow
 keras
 opencv_python_headless
-langchain==0.0.350
+langchain
 langchain-google-genai
 python-dotenv
 Flask
